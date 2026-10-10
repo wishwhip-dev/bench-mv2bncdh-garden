@@ -24,6 +24,9 @@ import { Label } from "@/components/ui/label";
  */
 export function SharePost({ slug, title }: Readonly<{ slug: string; title: string }>) {
   const [copied, setCopied] = useState(false);
+  // The share dialog is controlled so its content — which reads the page's address — only mounts
+  // once the reader has opened it, after which `window` exists.
+  const [shareOpen, setShareOpen] = useState(false);
   // Set when copying fails or the clipboard API is missing: the fallback shows the full URL in a
   // selectable field rather than pretending the copy worked. Never an empty catch.
   const [fallbackUrl, setFallbackUrl] = useState<string | null>(null);
