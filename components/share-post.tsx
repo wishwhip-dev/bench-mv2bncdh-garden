@@ -63,23 +63,7 @@ export function SharePost({ slug, title }: Readonly<{ slug: string; title: strin
     inputRef.current?.select();
   }
 
-  const links = [
-    {
-      name: "Email",
-      icon: Mail,
-      href: `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${title}\n\n${absoluteUrl()}`)}`,
-    },
-    {
-      name: "X",
-      icon: null,
-      href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(absoluteUrl())}`,
-    },
-    {
-      name: "Bluesky",
-      icon: null,
-      href: `https://bsky.app/intent/compose?text=${encodeURIComponent(`${title} — ${absoluteUrl()}`)}`,
-    },
-  ];
+  const links = shareLinks(absoluteUrl(), title);
 
   return (
     <footer className="mt-2 border-t border-border pt-6">
@@ -90,37 +74,39 @@ export function SharePost({ slug, title }: Readonly<{ slug: string; title: strin
           {copied ? "Copied" : "Copy link"}
         </Button>
 
-        <Dialog>
+        <Dialog open={shareOpen} onOpenChange={setShareOpen}>
           <DialogTrigger asChild>
             <Button variant="ghost" className="min-h-9">
               <Share2 aria-hidden="true" />
               Share…
             </Button>
           </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>Share this post</DialogTitle>
-              <DialogDescription>
-                Each link carries the post&rsquo;s title and address, ready filled in.
-              </DialogDescription>
-            </DialogHeader>
-            <ul className="flex flex-col gap-2">
-              {links.map(({ name, href, icon: Icon }) => (
-                <li key={name}>
-                  <Button variant="secondary" asChild className="w-full justify-start">
-                    <a href={href} target="_blank" rel="noopener noreferrer">
-                      {Icon ? <Icon aria-hidden="true" /> : <ExternalLink aria-hidden="true" />}
-                      Share on {name}
-                    </a>
-                  </Button>
-                </li>
-              ))}
-            </ul>
-            <p className="text-xs text-muted-foreground">
-              The links open the service&rsquo;s own share window in a new tab; nothing is sent
-              anywhere until you press send there.
-            </p>
-          </DialogContent>
+          {shareOpen && (
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Share this post</DialogTitle>
+                <DialogDescription>
+                  Each link carries the post&rsquo;s title and address, ready filled in.
+                </DialogDescription>
+              </DialogHeader>
+              <ul className="flex flex-col gap-2">
+                {links.map(({ name, href, icon: Icon }) => (
+                  <li key={name}>
+                    <Button variant="secondary" asChild className="w-full justify-start">
+                      <a href={href} target="_blank" rel="noopener noreferrer">
+                        {Icon ? <Icon aria-hidden="true" /> : <ExternalLink aria-hidden="true" />}
+                        Share on {name}
+                      </a>
+                    </Button>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-muted-foreground">
+                The links open the service&rsquo;s own share window in a new tab; nothing is sent
+                anywhere until you press send there.
+              </p>
+            </DialogContent>
+          )}
         </Dialog>
       </div>
 
@@ -150,4 +136,33 @@ export function SharePost({ slug, title }: Readonly<{ slug: string; title: strin
       )}
     </footer>
   );
+}
+
+type ShareLink = { name: string; href: string; icon: typeof Mail | null };
+
+/**
+ * The three share targets, with the title and URL passed through `encodeURIComponent` so an
+ * apostrophe in a title or an `&` in a query string survives the trip. Called only from the
+ * opened dialog's render, where `window` is real.
+ */
+function shareLinks(url: string, title: string): ShareLink[] {
+  const encodedTitle = encodeURIComponent(title);
+  const encodedUrl = encodeURIComponent(url);
+  return [
+    {
+      name: "Email",
+      icon: Mail,
+      href: `mailto:?subject=${encodedTitle}&body=${encodeURIComponent(`${title}\n\n${url}`)}`,
+    },
+    {
+      name: "X",
+      icon: null,
+      href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+    },
+    {
+      name: "Bluesky",
+      icon: null,
+      href: `https://bsky.app/intent/compose?text=${encodeURIComponent(`${title} — ${url}`)}`,
+    },
+  ];
 }
