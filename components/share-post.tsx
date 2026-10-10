@@ -63,8 +63,6 @@ export function SharePost({ slug, title }: Readonly<{ slug: string; title: strin
     inputRef.current?.select();
   }
 
-  const links = shareLinks(absoluteUrl(), title);
-
   return (
     <footer className="mt-2 border-t border-border pt-6">
       <p className="text-sm text-muted-foreground">Read to the end? Pass it on.</p>
