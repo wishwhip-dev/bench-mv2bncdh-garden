@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <!-- January evening: snow on the beds outside the window, seed catalogues open on the table. -->
+  <defs>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4664"/>
+      <stop offset="1" stop-color="#56628a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#241c2a"/>
+  <!-- the window on the frozen garden -->
+  <g>
+    <rect x="120" y="80" width="620" height="400" fill="url(#window)"/>
+    <!-- snow-covered raised beds seen through the glass -->
+    <rect x="150" y="330" width="560" height="14" fill="#8a5f42"/>
+    <rect x="150" y="344" width="560" height="40" fill="#4a3628"/>
+    <path d="M150 344 h560 q-10 -18 0 -30 h-560 q10 12 0 30 z" fill="#e9edf4"/>
+    <rect x="150" y="404" width="560" height="14" fill="#8a5f42"/>
+    <rect x="150" y="418" width="560" height="40" fill="#4a3628"/>
+    <path d="M150 418 h560 q-10 -18 0 -30 h-560 q10 12 0 30 z" fill="#e9edf4"/>
+    <!-- bare apple tree and snowfall -->
+    <g stroke="#d8dce6" stroke-width="6" fill="none" stroke-linecap="round">
+      <path d="M600 300 v-110 M600 240 q-40 -20 -70 -8 M600 210 q34 -22 66 -12 M600 190 q-22 -26 -14 -50"/>
+    </g>
+    <g fill="#e9edf4">
+      <circle cx="200" cy="120" r="6"/>
+      <circle cx="260" cy="180" r="5"/>
+      <circle cx="330" cy="110" r="6"/>
+      <circle cx="400" cy="200" r="5"/>
+      <circle cx="470" cy="130" r="6"/>
+      <circle cx="540" cy="230" r="5"/>
+      <circle cx="660" cy="120" r="6"/>
+      <circle cx="700" cy="250" r="5"/>
+    </g>
+    <!-- moon -->
+    <circle cx="680" cy="120" r="26" fill="#f0ecdc"/>
+    <!-- frame and cill -->
+    <rect x="120" y="80" width="620" height="400" fill="none" stroke="#4a3a3a" stroke-width="16"/>
+    <line x1="430" y1="80" x2="430" y2="480" stroke="#4a3a3a" stroke-width="14"/>
+    <line x1="120" y1="280" x2="740" y2="280" stroke="#4a3a3a" stroke-width="12"/>
+    <rect x="96" y="480" width="668" height="26" rx="6" fill="#5a463c"/>
+  </g>
+  <!-- the table -->
+  <rect x="0" y="560" width="1200" height="115" fill="#6a4f3a"/>
+  <rect x="0" y="560" width="1200" height="14" fill="#7d5f46"/>
+  <!-- open catalogue, dog-eared -->
+  <g transform="translate(360 500)">
+    <path d="M0 60 L150 30 L300 60 L300 66 L150 38 L0 66 Z" fill="#e9dcc0"/>
+    <path d="M0 60 L0 -10 L150 20 L150 88 L0 58 Z" fill="#f2ead4"/>
+    <path d="M300 60 L300 -10 L150 20 L150 88 L300 58 Z" fill="#e4d6b8"/>
+    <g stroke="#8a7a48" stroke-width="5">
+      <line x1="24" y1="0" x2="120" y2="18"/>
+      <line x1="24" y1="18" x2="120" y2="36"/>
+      <line x1="180" y1="24" x2="276" y2="6"/>
+    </g>
+    <circle cx="72" cy="46" r="14" fill="#c26a4a"/>
+    <rect x="200" y="38" width="60" height="24" rx="6" fill="#5f9440"/>
+    <path d="M148 8 l10 -14 l8 16 z" fill="#c9ba96"/>
+  </g>
+  <!-- second catalogue closed, stacked -->
+  <g transform="translate(760 536)">
+    <rect x="0" y="0" width="180" height="26" rx="4" fill="#d64b35"/>
+    <rect x="0" y="26" width="180" height="26" rx="4" fill="#5f9440"/>
+    <rect x="14" y="8" width="90" height="8" rx="4" fill="#f2ead4"/>
+    <rect x="14" y="36" width="110" height="8" rx="4" fill="#f2ead4"/>
+  </g>
+  <!-- mug of tea, steam -->
+  <g transform="translate(1000 516)">
+    <rect x="-30" y="0" width="60" height="44" rx="8" fill="#8fc4d4"/>
+    <path d="M30 8 q22 4 22 14 q0 10 -22 14" fill="none" stroke="#8fc4d4" stroke-width="8"/>
+    <ellipse cx="0" cy="0" rx="30" ry="8" fill="#5a463c"/>
+    <ellipse cx="0" cy="0" rx="22" ry="5" fill="#3a2c22"/>
+    <path d="M-10 -14 q6 -10 0 -20 M10 -14 q6 -10 0 -20" stroke="#c9c4ba" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <!-- pencil and a circled order list -->
+  <g transform="translate(660 610)">
+    <rect x="-70" y="-6" width="140" height="14" rx="4" fill="#e9dcc0"/>
+    <path d="M70 -6 l16 7 l-16 7 z" fill="#c98a3d"/>
+    <rect x="-84" y="-8" width="14" height="18" rx="3" fill="#d88a8a"/>
+  </g>
+</svg>

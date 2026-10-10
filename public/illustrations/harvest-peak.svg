@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <!-- The September peak: a trug filled past the brim on the path between two spent beds. -->
+  <defs>
+    <linearGradient id="harvest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe0d8"/>
+      <stop offset="1" stop-color="#efe6c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#harvest)"/>
+  <circle cx="980" cy="120" r="54" fill="#f7e3a0"/>
+  <!-- hedge turning at the tips -->
+  <rect x="0" y="320" width="1200" height="58" fill="#6a7a42"/>
+  <g fill="#8a7a3a">
+    <circle cx="140" cy="322" r="10"/>
+    <circle cx="420" cy="318" r="10"/>
+    <circle cx="700" cy="322" r="10"/>
+    <circle cx="960" cy="318" r="10"/>
+  </g>
+  <rect x="0" y="378" width="1200" height="297" fill="#94a870"/>
+  <!-- beds either side, still carrying plants -->
+  <g>
+    <rect x="60" y="440" width="380" height="14" fill="#8a5a3b"/>
+    <rect x="60" y="454" width="380" height="76" fill="#4a3628"/>
+    <rect x="60" y="454" width="14" height="76" fill="#8a5a3b"/>
+    <rect x="426" y="454" width="14" height="76" fill="#8a5a3b"/>
+    <g fill="#5f9440">
+      <path d="M130 454 q-10 -30 6 -44 q16 14 8 44 z"/>
+      <path d="M240 454 q-10 -30 6 -44 q16 14 8 44 z"/>
+      <path d="M350 454 q-10 -30 6 -44 q16 14 8 44 z"/>
+    </g>
+  </g>
+  <g>
+    <rect x="760" y="440" width="380" height="14" fill="#8a5a3b"/>
+    <rect x="760" y="454" width="380" height="76" fill="#4a3628"/>
+    <rect x="760" y="454" width="14" height="76" fill="#8a5a3b"/>
+    <rect x="1126" y="454" width="14" height="76" fill="#8a5a3b"/>
+    <g stroke="#4d7a35" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M850 454 C 846 420 854 390 852 366"/>
+      <path d="M960 454 C 956 420 964 390 962 366"/>
+    </g>
+    <g fill="#5f9440">
+      <path d="M852 366 q-30 -6 -38 -28 q30 -8 40 16 z"/>
+      <path d="M962 366 q30 -6 38 -28 q-30 -8 -40 16 z"/>
+    </g>
+  </g>
+  <!-- the trug -->
+  <g transform="translate(600 560)">
+    <path d="M-190 -70 L190 -70 L160 60 L-160 60 Z" fill="#b98a4e"/>
+    <path d="M-190 -70 L190 -70 L182 -46 L-182 -46 Z" fill="#a5763d"/>
+    <g stroke="#8a5f30" stroke-width="5" opacity="0.7">
+      <line x1="-150" y1="-46" x2="-128" y2="60"/>
+      <line x1="-90" y1="-46" x2="-76" y2="60"/>
+      <line x1="-30" y1="-46" x2="-24" y2="60"/>
+      <line x1="30" y1="-46" x2="24" y2="60"/>
+      <line x1="90" y1="-46" x2="76" y2="60"/>
+      <line x1="150" y1="-46" x2="128" y2="60"/>
+    </g>
+    <path d="M-130 -70 Q0 -160 130 -70" fill="none" stroke="#8a5f30" stroke-width="10"/>
+  </g>
+  <!-- produce mounding above the trug -->
+  <g>
+    <!-- squash -->
+    <ellipse cx="520" cy="490" rx="56" ry="44" fill="#dd8a2e"/>
+    <path d="M520 452 q-4 -18 8 -24" stroke="#6a5a2a" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M476 482 q44 -20 88 0" stroke="#b06a1e" stroke-width="5" fill="none"/>
+    <!-- tomatoes -->
+    <circle cx="620" cy="500" r="24" fill="#d64b35"/>
+    <circle cx="662" cy="512" r="20" fill="#c23a28"/>
+    <circle cx="600" cy="528" r="19" fill="#e05a42"/>
+    <circle cx="626" cy="530" r="16" fill="#d64b35"/>
+    <circle cx="612" cy="492" r="6" fill="#f2a286"/>
+    <!-- beans -->
+    <g fill="#6a9a4a">
+      <path d="M700 520 q34 -10 56 6 q-22 16 -56 6 z"/>
+      <path d="M700 544 q36 -8 58 8 q-24 14 -58 4 z"/>
+      <path d="M486 540 q-36 -6 -56 12 q22 14 56 2 z"/>
+    </g>
+    <!-- beets -->
+    <g>
+      <circle cx="760" cy="540" r="17" fill="#8a4a5f"/>
+      <path d="M756 526 q4 -14 10 -18" stroke="#5f9440" stroke-width="5" fill="none"/>
+      <circle cx="798" cy="548" r="15" fill="#7a3a4f"/>
+      <path d="M796 536 q2 -12 8 -16" stroke="#5f9440" stroke-width="5" fill="none"/>
+    </g>
+    <!-- carrots poking out -->
+    <g>
+      <path d="M420 540 l14 -4 l10 46 l-30 4 z" fill="#dd7a2e"/>
+      <path d="M424 536 q-8 -18 -2 -26 M432 534 q2 -20 10 -24" stroke="#5f9440" stroke-width="5" fill="none"/>
+      <path d="M452 546 l14 -2 l6 40 l-28 2 z" fill="#d66a24"/>
+      <path d="M456 544 q-6 -16 -2 -24 M464 542 q4 -18 10 -20" stroke="#5f9440" stroke-width="5" fill="none"/>
+    </g>
+    <!-- a marrow lying across the front -->
+    <g transform="translate(600 636) rotate(-4)">
+      <ellipse cx="0" cy="0" rx="120" ry="26" fill="#4d7a35"/>
+      <ellipse cx="-10" cy="-8" rx="90" ry="16" fill="#6a9a4a"/>
+      <circle cx="96" cy="-2" r="12" fill="#8fbf6a"/>
+    </g>
+  </g>
+</svg>
