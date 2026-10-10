@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <!-- November: compost spread, fleece pegged down, bare canes stacked — the beds put to bed. -->
+  <defs>
+    <linearGradient id="late" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4ccd4"/>
+      <stop offset="1" stop-color="#dcd8c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#late)"/>
+  <circle cx="1020" cy="110" r="40" fill="#e8e6dc"/>
+  <circle cx="1020" cy="110" r="58" fill="#e8e6dc" opacity="0.4"/>
+  <!-- leafless hedge outline -->
+  <rect x="0" y="320" width="1200" height="58" fill="#6a6a52"/>
+  <g stroke="#56564a" stroke-width="3" fill="none">
+    <path d="M140 320 v-30 M180 320 v-40 M220 320 v-26"/>
+    <path d="M540 320 v-32 M580 320 v-42 M620 320 v-28"/>
+    <path d="M940 320 v-30 M980 320 v-40"/>
+  </g>
+  <rect x="0" y="378" width="1200" height="297" fill="#8a8a66"/>
+  <!-- front bed: dark compost mulch spread evenly -->
+  <g>
+    <rect x="90" y="470" width="1020" height="14" fill="#7a4f34"/>
+    <rect x="90" y="484" width="1020" height="80" fill="#4a3628"/>
+    <rect x="90" y="484" width="14" height="80" fill="#7a4f34"/>
+    <rect x="1096" y="484" width="14" height="80" fill="#7a4f34"/>
+    <path d="M130 492 h940 q-8 24 0 64 h-940 q8 -40 0 -64 z" fill="#33261c"/>
+    <g fill="#4a382a">
+      <circle cx="240" cy="514" r="10"/>
+      <circle cx="420" cy="530" r="12"/>
+      <circle cx="620" cy="512" r="10"/>
+      <circle cx="800" cy="532" r="12"/>
+      <circle cx="960" cy="514" r="10"/>
+    </g>
+  </g>
+  <!-- back bed: under fleece, pegged at the corners -->
+  <g>
+    <rect x="90" y="380" width="1020" height="12" fill="#7a4f34"/>
+    <rect x="90" y="392" width="1020" height="56" fill="#4a3628"/>
+    <rect x="90" y="392" width="14" height="56" fill="#7a4f34"/>
+    <rect x="1096" y="392" width="14" height="56" fill="#7a4f34"/>
+    <path d="M60 388 L1140 388 L1160 330 L40 330 Z" fill="#e9e7da"/>
+    <path d="M60 388 L1140 388 L1136 372 L64 372 Z" fill="#dcd9c8"/>
+    <g fill="#8a5a3b">
+      <circle cx="70" cy="386" r="7"/>
+      <circle cx="1130" cy="386" r="7"/>
+      <circle cx="420" cy="386" r="7"/>
+      <circle cx="780" cy="386" r="7"/>
+    </g>
+    <!-- garlic shoots pushing the fleece up in one spot -->
+    <path d="M560 336 q14 -18 30 -6 q-6 12 -22 14 z" fill="#cfcab4"/>
+  </g>
+  <!-- compost heap by the bed's end -->
+  <g transform="translate(160 600)">
+    <path d="M-90 40 Q-60 -40 0 -44 Q60 -40 90 40 Z" fill="#5a4430"/>
+    <path d="M-60 -20 Q0 -48 60 -20" fill="none" stroke="#6a5238" stroke-width="6"/>
+    <ellipse cx="0" cy="-42" rx="34" ry="10" fill="#4a3628"/>
+    <circle cx="-30" cy="-30" r="8" fill="#8a6a48"/>
+    <circle cx="28" cy="-26" r="8" fill="#8a6a48"/>
+  </g>
+  <!-- stacked canes and a fork stuck in the ground -->
+  <g stroke="#a8825a" stroke-width="8" stroke-linecap="round">
+    <line x1="1060" y1="580" x2="1140" y2="560"/>
+    <line x1="1064" y1="596" x2="1144" y2="576"/>
+    <line x1="1060" y1="612" x2="1140" y2="592"/>
+  </g>
+  <g transform="translate(1120 500)">
+    <line x1="0" y1="0" x2="-8" y2="86" stroke="#7a6a52" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-14 -6 q14 -10 28 0 l-6 20 q-8 -6 -16 0 z" fill="#6a6a70"/>
+  </g>
+</svg>
