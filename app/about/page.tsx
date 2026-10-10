@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 /** What the seven beds grow in a normal year, in the order the season meets them. */
 const CROPS = [
-  { crop: "Broad beans", sown: "February", harvest: "June–July", note: "The可靠的… nothing. Reliable. Sown in cold soil, unbothered by frost." },
+  { crop: "Broad beans", sown: "February", harvest: "June–July", note: "Sown into cold soil and unbothered by frost; the stubborn opener of the year." },
   { crop: "Parsnips", sown: "March", harvest: "October–January", note: "Freshly collected seed every year; it will not germinate after one winter." },
   { crop: "Lettuce", sown: "April–August", harvest: "May–October", note: "Grown in grit trays after the slug year taught its lesson." },
   { crop: "Runner beans", sown: "May", harvest: "July–October", note: "Half eaten, half left on the cane to dry for next year's seed." },
