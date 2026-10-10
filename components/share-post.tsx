@@ -88,7 +88,7 @@ export function SharePost({ slug, title }: Readonly<{ slug: string; title: strin
                 </DialogDescription>
               </DialogHeader>
               <ul className="flex flex-col gap-2">
-                {links.map(({ name, href, icon: Icon }) => (
+                {shareLinks(absoluteUrl(), title).map(({ name, href, icon: Icon }) => (
                   <li key={name}>
                     <Button variant="secondary" asChild className="w-full justify-start">
                       <a href={href} target="_blank" rel="noopener noreferrer">
